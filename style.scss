@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.header{
+    width: 100%;
+    background-color: #ff502f;
+    padding: 6rem 2rem;
+    text-align: center;
+
+    h1{
+        width : 100%;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        // margin-right: 2rem;
+    }
+}
+
+@media (max-width: 600px){
+    .header h1{
+        font-size: 2.2rem;
+    }
+
+    .header{
+        padding: 6rem 1.5rem;
+    }
+}
+
+
+form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    input{
+        border: transparent;
+        // display: inline-block;
+        width: 300px;
+        padding: 7.15px 0;
+    }
+
+    button{
+        position: relative;
+        color: white;
+        background-color: #31393d;
+        right: 5px;
+        border: transparent;
+        border-radius: 0;
+        padding: 8px 7px;
+    }
+} 
+
+@media (max-width: 600px){
+    form{
+        // width: 450px;
+
+        input{
+
+            width: 190px;
+        }
+
+        button{
+            padding: 8px 5px;
+        }
+
+    }
+}
+
+
+
+.search-result{
+    // margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item{
+    // overflow: hidden;
+    background-color: darken(#31393d, 2%);
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 25px 5px;
+
+    .title{
+        margin: 12px 0 5px 0;
+    }
+
+    .view-button{
+        background-color: white;
+        color: black;
+        padding: 3px 8px;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 8px 0 8px 0;
+    }
+
+}
+
+.item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+
