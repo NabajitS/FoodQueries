@@ -20,16 +20,17 @@ const APP_KEY = '79b0c23e20781fe83a1dc07cb61acf07';
 
 searchForm.addEventListener('submit', function (e) {
     e.preventDefault();
+    searchResultDiv.textContent = '';
     searchQuery = e.target.querySelector('input').value;
-    console.log(searchQuery);
+
 
     fetch(`https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10`)
         .then(response => response.json())
         .then(data => {
             generateHTML(data.hits)
-            console.log(data)
-            console.log(data.hits)
-            console.log(data.hits[0].recipe.image)
+            // console.log(data)
+            // console.log(data.hits)
+            // console.log(data.hits[0].recipe.image)
         })
 })
 
@@ -50,6 +51,6 @@ function generateHTML(results) {
         searchResultDiv.insertAdjacentHTML('afterbegin', itemHTML)
     })
 
-    console.log(results);
+
 }
 
