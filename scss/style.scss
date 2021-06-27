@@ -34,7 +34,7 @@ section{
     height: auto;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .header{
@@ -47,7 +47,6 @@ section{
         width : 100%;
         margin-bottom: 2rem;
         font-size: 3rem;
-        // margin-right: 2rem;
     }
 }
 
@@ -104,7 +103,6 @@ form{
 
 
 .search-result{
-    // margin-top: 50px;
     width: 100%;
     display: grid;
     grid-gap: 25px;
@@ -112,7 +110,6 @@ form{
 }
 
 .item{
-    // overflow: hidden;
     background-color: darken(#31393d, 2%);
     border-radius: 5px;
     border: 2px solid white;
@@ -140,5 +137,10 @@ form{
     border-radius: 100%;
 }
 
-
-
+.Lets-get-cooking{
+    color: #31393d;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 10vh;
+}
